@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>LA TRI – Pasión por el deporte</title>
+
+<style>
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+margin:0;
+font-family:Segoe UI,Arial;
+color:white;
+background:black;
+}
+
+#fondo{
+position:fixed;
+right:0;
+bottom:0;
+min-width:100%;
+min-height:100%;
+z-index:-1;
+object-fit:cover;
+}
+
+body::before{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.45);
+z-index:-1;
+}
+
+/* encabezado */
+
+header{
+text-align:center;
+padding:120px 50px;
+background:url("https://upload.wikimedia.org/wikipedia/commons/e/e1/Ecuador_national_team_2022.jpg");
+background-size:cover;
+background-position:center;
+color:white;
+}
+
+header h1{
+font-size:50px;
+margin:0;
+}
+
+header h1{
+font-size:50px;
+margin:0;
+text-shadow:2px 2px 8px black;
+}
+
+header p{
+text-shadow:2px 2px 8px black;
+}
+
+/* menu */
+
+nav{
+background:#001c4a;
+padding:15px;
+text-align:center;
+position:sticky;
+top:0;
+z-index:10;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#ffd700;
+transform:scale(1.1);
+}
+
+/* contenedor */
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:20px;
+}
+
+/* secciones */
+
+section{
+background:#0f2d63;
+margin:30px 0;
+padding:25px;
+border-radius:14px;
+box-shadow:0 6px 18px rgba(0,0,0,0.4);
+opacity:0;
+transform:translateY(40px);
+transition:1s;
+}
+
+section.visible{
+opacity:1;
+transform:translateY(0);
+}
+
+h2{
+color:#ffd700;
+}
+
+/* imagenes */
+
+img{
+width:100%;
+border-radius:10px;
+margin-top:10px;
+transition:0.4s;
+}
+
+img:hover{
+transform:scale(1.05);
+}
+
+/* timeline */
+
+.timeline{
+border-left:4px solid #ffd700;
+padding-left:20px;
+}
+
+.timeline div{
+margin-bottom:25px;
+background:#0b2a63;
+padding:15px;
+border-radius:10px;
+}
+
+/* tabla */
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:15px;
+}
+
+th,td{
+border:1px solid white;
+padding:10px;
+text-align:center;
+}
+
+th{
+background:#ffd700;
+color:black;
+}
+
+/* galeria */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:15px;
+}
+
+.gallery img{
+height:200px;
+object-fit:cover;
+}
+
+.gallery img:hover{
+transform:scale(1.08);
+}
+
+/* footer */
+
+footer{
+text-align:center;
+padding:20px;
+background:#001c4a;
+}
+
+</style>
+</head>
+
+<body>
+
+<video autoplay muted loop id="fondo">
+<source src="bandera.mp4" type="video/mp4">
+</video>
+
+<header>
+<h1>LA TRI</h1>
+<p>Pasión por el deporte – Historia de la Selección Ecuatoriana (2000-2026)</p>
+</header>
+
+<nav>
+<a href="#historia">Historia</a>
+<a href="#timeline">Línea de tiempo</a>
+<a href="#mundiales">Mundiales</a>
+<a href="#jugadores">Jugadores</a>
+<a href="#galeria">Galería</a>
+<a href="#2026">Mundial 2026</a>
+</nav>
+
+<div class="container">
+
+<section id="historia">
+
+<h2>Historia de la Selección Ecuatoriana</h2>
+
+<img src="https://imagenes.primicias.ec/files/main_image_832_468/uploads/2025/12/05/6932f970d5eaa.jpeg">
+
+<p>
+La selección ecuatoriana de fútbol, conocida como “La Tri”, representa al Ecuador en las competiciones internacionales.
+Desde el año 2000 comenzó una etapa histórica para el fútbol ecuatoriano con participaciones en varios mundiales.
+</p>
+
+<p>
+El desarrollo de nuevos jugadores y la participación en torneos internacionales permitió que Ecuador se consolidara
+como una selección competitiva en Sudamérica.
+</p>
+
+</section>
+
+<section id="timeline">
+
+<h2>Línea de tiempo 2000-2026</h2>
+
+<div class="timeline">
+
+<div>
+<b>2002</b> – Primera participación en el Mundial (Corea-Japón).
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinp1ph9sjrSVieVtpBC7kO7kktm6_NPPXnG9FPnuGUtOXPYgsrsIjSDBC5U0FjnbRIr3MuHGBf-8BO-tQyYyym2VZCUlJn42hjtXzsX7zS7vGuYUDqXdtv9GchRYsGQorrykpoAobjxGud/s320/kj2002.jpg">
+</div>
+
+<div>
+<b>2006</b> – Mejor resultado histórico: octavos de final en Alemania.
+<img src="https://imagenes.primicias.ec/files/main_image_832_468/uploads/2025/12/05/6933416ee99b9.jpeg">
+</div>
+
+<div>
+<b>2014</b> – Clasificación al Mundial de Brasil.
+<img src="https://www.teradeportes.com/sites/default/files/styles/flexslider_boxed_/public/images/titulares/2014/2014-07-15/copa.jpg?itok=L1u5ysNm">
+</div>
+
+<div>
+<b>2022</b> – Participación en el Mundial de Qatar con una nueva generación.
+<img src="https://cdn2.mediotiempo.com/uploads/media/2022/11/20/resultados-qatar-ecuador.jpg">
+</div>
+
+<div>
+<b>2026</b> – Ecuador busca clasificar al Mundial de Estados Unidos, México y Canadá.
+<img src="https://www.ecuagol.com/media/cache/sm/uploads/2025/DICIEMBRE/COPA%20ECUADOR/copa-mundial-2026-grupos.jpeg">
+</div>
+
+</div>
+
+</section>
+
+<section id="mundiales">
+
+<h2>Participaciones en Mundiales</h2>
+
+<table>
+
+<tr>
+<th>Año</th>
+<th>Sede</th>
+<th>Resultado</th>
+</tr>
+
+<tr>
+<td>2002</td>
+<td>Corea-Japón</td>
+<td>Fase de grupos</td>
+</tr>
+
+<tr>
+<td>2006</td>
+<td>Alemania</td>
+<td>Octavos de final</td>
+</tr>
+
+<tr>
+<td>2014</td>
+<td>Brasil</td>
+<td>Fase de grupos</td>
+</tr>
+
+<tr>
+<td>2022</td>
+<td>Qatar</td>
+<td>Fase de grupos</td>
+</tr>
+
+</table>
+
+</section>
+
+<section id="jugadores">
+
+<h2>Jugadores históricos</h2>
+
+<ul>
+<li>Álex Aguinaga</li>
+<li>Iván Hurtado</li>
+<li>Antonio Valencia</li>
+<li>Édison Méndez</li>
+<li>Enner Valencia</li>
+<li>Moisés Caicedo</li>
+</ul>
+
+</section>
+
+<section id="galeria">
+
+<h2>Galería de jugadores</h2>
+
+<div class="gallery">
+
+<img src="https://www.elfutbolero.com.ec/_image?href=https%3A%2F%2Fwww.elfutbolero.com.ec%2Fimage%2Felfutbolerocomec%2Fantonio-valencia-el-nacional-foto-manchester-united-1762447500.webp&w=900&h=506&q=80&f=webp">
+
+<img src="https://mvpdeportes.com/wp-content/uploads/2026/02/Enner-Valencia-y-Emelec-cada-vez-mas-cerca-de-un-T-860x530.jpg">
+
+<img src="https://studiofutbol.com.ec/wp-content/uploads/2022/08/GSVEJ57WWBDD5K222SMUCCSZNE.jpg">
+
+<img src="https://media.bolavip.com/wp-content/uploads/sites/26/2025/07/30182836/NUEVO-DISENO-BOLAVIP-2025-07-30T162815.361-740x416.webp">
+
+<img src="https://www.ole.com.ar/images/2025/05/19/AEmh9oo_p_720x0__1.jpg">
+
+</div>
+
+</section>
+
+<section id="2026">
+
+<h2>Participación y posibilidades para el Mundial 2026</h2>
+
+<img src="https://www.eluniverso.com/resizer/v2/6OOOXWWJDRDRPCS3MTI5QHILHE.jpg?auth=b2bf9965107978e9734e8a950ff76862d34874cebc2c5e5fe22ba3df28d83245&width=5568&height=3712&quality=75&smart=true">
+
+<p>
+El Mundial 2026 será organizado por Estados Unidos, México y Canadá.
+Ecuador cuenta con una generación joven de futbolistas que participan en ligas internacionales,
+como Moisés Caicedo y Piero Hincapié.
+</p>
+
+<p>
+El aumento de cupos para Sudamérica en este mundial aumenta las posibilidades de clasificación
+para la selección ecuatoriana. El objetivo del equipo es volver a competir en una Copa del Mundo
+y mejorar su mejor resultado histórico logrado en 2006.
+</p>
+
+</section>
+
+</div>
+
+<footer>
+Proyecto escolar – Historia de la Selección Ecuatoriana de Fútbol
+</footer>
+
+<script>
+
+/* animaciones */
+
+const sections=document.querySelectorAll("section");
+
+window.addEventListener("scroll",()=>{
+sections.forEach(sec=>{
+const top=sec.getBoundingClientRect().top;
+
+if(top<window.innerHeight-100){
+sec.classList.add("visible");
+}
+});
+});
+
+</script>
+
+</body>
+</html>
